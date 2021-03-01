@@ -1,0 +1,41 @@
+import React from 'react';
+import Logo from '../assets/logo.png';
+
+const Nav = () => {
+  return (
+    <nav className="navbar">
+      <div className="container">
+        <ul className="narbar_left">
+          <div className="narbar_left-logo">
+            <img src={Logo} alt="logo" />
+          </div>
+        </ul>
+        <ul className="navbar_right">
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="">Service</a>
+          </li>
+          <li>
+            <a href="">About</a>
+          </li>
+          <li>
+            <a href="">Skills</a>
+          </li>
+          <li>
+            <a href="">Portfolio</a>
+          </li> 
+          <li>
+            <a href="">Blog</a>
+          </li>
+          <li>
+            <a href="">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  )
+}
+
+export default Nav
