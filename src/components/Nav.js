@@ -5,8 +5,9 @@ const Nav = () => {
   return (
     <nav className="navbar">
       <div className="container">
-        <ul className="narbar_left">
-          <div className="narbar_left-logo">
+      <div className="navbar_container">
+        <ul className="navbar_left">
+          <div className="navbar_left-logo">
             <img src={Logo} alt="logo" />
           </div>
         </ul>
@@ -33,6 +34,8 @@ const Nav = () => {
             <a href="">Contact</a>
           </li>
         </ul>
+      </div>
+        
       </div>
     </nav>
   )
