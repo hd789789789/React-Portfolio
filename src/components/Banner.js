@@ -25,6 +25,9 @@ const Banner = () => {
                 </ul>
                 <h1>Hello, I'm Lê Nguyễn Hải Duy</h1>
                 <p>Hello, I'm Lê Nguyễn Hải Duy</p>
+                <div className="header_button">
+                  <a href="" className="btn btn-outline">My Portfolio</a>
+                </div>
               </div>  
             </div>
           </div>
