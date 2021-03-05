@@ -14,6 +14,7 @@ body {
   background: url("./assets/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 
 .navbar {
@@ -96,14 +97,14 @@ body {
   margin-left: 10px;
 }
 
-.header_content .header_section h1 {
+.header_section h1 {
   font-family: 'Play', sans-serif;
   font-size: 57px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.header_content .header_section p {
+.header_section p {
   font-family: 'Play', sans-serif;
   font-size: 26px;
   font-weight: 300;
@@ -122,4 +123,39 @@ body {
   border: 2px solid #ff4a57;
   border-radius: 50px;
   padding: 13px 40px;
+}
+
+.banner_img {
+  padding: 0 30px;
+  margin-top: 150px;
+}
+
+/* Services */
+.services {
+  background: #1f2235;
+  padding: 100px 0;
+  color: #fff;
+}
+
+.common {
+  width: 33.33%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.heading {
+  margin-bottom: 20px;
+  font-weight: 500;
+  color: #ff4a57;
+  font-size: 16px;
+}
+
+.main_header {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.main_content {
+  font-size: 16px;
+  color: #dfdfdf;
 }
