@@ -57,14 +57,23 @@ body {
   margin: 0 auto;
 }
 
+.bgMain {
+  background-color: #1f2235;
+}
+
 /* Grid System */
 .row  {
   display: flex;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .col-6 {
   width: 50%;
+}
+
+.col-4{
+  width: 33.33%;
 }
 
 /* header */
@@ -157,5 +166,29 @@ body {
 
 .main_content {
   font-size: 16px;
+  color: #dfdfdf;
+}
+
+.service_box {
+  padding: 40px;
+  background-color: #23253a;
+  color: #fff;
+  margin: 20px;
+}
+
+.commonIcons {
+  font-size: 40px;
+  color: #ff4a57;
+  margin-bottom: 15px;
+}
+
+.service_box-header {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.service_box-content {
+  font-size: 14px;
   color: #dfdfdf;
 }
