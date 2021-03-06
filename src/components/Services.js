@@ -68,9 +68,7 @@ const Services = () => {
             <h3 className="heading">{header.mainHeader}</h3>
             <h1 className="main_header">{header.subHeader}</h1>
             <p className="main_content">{header.text}</p>
-            <div className="commonBorder">
-
-            </div>
+            <div className="commonBorder"></div>
           </div>
           <div className="row bgMain">
             {state.map(info => (

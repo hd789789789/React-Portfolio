@@ -13,16 +13,16 @@ const Banner = () => {
               <div className="header_section">
                 <ul className="header_ul">
                   <li>
-                    <FaFacebookF />
+                    <FaFacebookF className="headerIcon"/>
                   </li>
                   <li>
-                    <FaYoutube />
+                    <FaYoutube className="headerIcon"/>
                   </li>
                   <li>
-                    <FaTwitter />
+                    <FaTwitter className="headerIcon"/>
                   </li>
                   <li>
-                    <FaInstagram />
+                    <FaInstagram className="headerIcon"/>
                   </li>
                 </ul>
                 <h1>{ state.title }</h1>
