@@ -14,7 +14,7 @@ const About = () => {
     { id: 4, title: "Username:", text: "Haiduyhd789" },
   ]);
   return (
-    <div className="about">
+    <div id="about1" className="about">
       <div className="container">
         <div className="common">
           <h1 className="main_header">{header.subHeader}</h1>

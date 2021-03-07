@@ -9,9 +9,7 @@ const Contact = () => {
         <div className="contactSection">
           <div className="row justifyConter">
             <div className="col-6">
-              <div className="contactSection-logo">
-                <img src={Logo} alt="" />
-              </div>
+                <h2 className="contact-logo">HD789</h2>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor inci- didunt ut labore et dolore magna aliqua. Ut
