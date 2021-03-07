@@ -162,6 +162,9 @@ body {
   border: none;
   color: #fff;
   text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 0;
 }
 
 .btn-outline {
@@ -169,6 +172,28 @@ body {
   border-radius: 50px;
   padding: 13px 40px;
 }
+
+/* .btn span {
+  background: #ff4a57;
+  position: absolute;
+  width: 0;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  border-radius: 50px;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.btn:hover span {
+  width: 100%;
+}
+*/
+
+.btn:hover {
+  background: #ff4a57;
+  transition: all 0.5s linear;
+} 
 
 .banner_img {
   padding: 0 30px;
@@ -215,6 +240,7 @@ body {
 
 .service_box {
   padding: 40px;
+  border-radius: 10px;
   background-color: #23253a;
   color: #fff;
   margin: 20px;
@@ -223,6 +249,7 @@ body {
 
 .service_box:hover {
   background: #ff4a57;
+  transform: translateY(-10px);
 }
 
 .commonIcons {
@@ -262,7 +289,7 @@ body {
 /* About */
 .about {
   width: 100%;
-  background: #23263a;
+  background: #1f2235;
   padding: 100px 0 0 0;
 }
 .about_img {
@@ -365,6 +392,68 @@ body {
   justify-content: center;
   display: none;
 }
+
+/* Skills */
+.skills {
+  padding: 100px 0 100px 0;
+  background: #23263a;
+}
+
+.skills_content {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  color: #fff;
+}
+
+p.skills_info {
+  display: inline-flex;
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.skills_process {
+  display: inline-flex;
+}
+
+.skills_ul {
+  list-style-type: none;
+  /* display: flex; */
+}
+
+
+.progress {
+	background-color: #d8d8d8;
+	border-radius: 20px;
+	position: relative;
+	margin: 15px 0;
+	height: 25px;
+	width: 300px;
+}
+
+.progress-done {
+	background: linear-gradient(135deg, #f3c5bd 0%,#e86c57 0%,#e54f34 39%,#ff6600 75%,#c72200 100%);
+	border-radius: 20px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 0;
+	opacity: 0;
+	transition: 2s ease 0.3s;
+}
+
+@media screen and (max-width: 670px) {
+  p.skills_info {
+    display: block;
+    margin: 0;
+  }
+}
+
 @media (max-width: 768px) {
   .container {
     width: 100%;

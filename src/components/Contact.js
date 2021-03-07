@@ -1,6 +1,5 @@
 import React from 'react'
 import {FaFacebookF, FaYoutube, FaTwitter, FaInstagram} from 'react-icons/fa';
-import Logo from '../assets/logo.png';
 
 const Contact = () => {
   return (

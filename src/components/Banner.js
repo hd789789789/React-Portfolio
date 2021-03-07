@@ -28,7 +28,7 @@ const Banner = () => {
                 <h1>{ state.title }</h1>
                 <p>{ state.text }</p>
                 <div className="header_button">
-                  <a href="" className="btn btn-outline">My Portfolio</a>
+                  <a href="https://drive.google.com/file/d/16mcLKqur67gQLXb4iuGO42X01bB3L8WO/view?usp=sharing" className="btn btn-outline"><span></span>Watch my CV</a>
                 </div>
               </div>  
             </div>

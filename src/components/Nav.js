@@ -1,5 +1,4 @@
 import React from 'react';
-import Logo from '../assets/logo.png';
 import {Link} from "react-scroll";
 import { FaAlignJustify } from "react-icons/fa";
 
@@ -24,10 +23,10 @@ const Nav = () => {
                 <Link to='services' className="active" smooth={true} duration={1000}>Services</Link>
               </li>
               <li>
-                <Link to='about' className="active" smooth={true} duration={1000}>About</Link>
+                <Link to='skills' className="active" smooth={true} duration={1000}>Skills</Link>  
               </li>
               <li>
-                <Link to='about' className="active" smooth={true} duration={1000}>Skills</Link>
+                <Link to='about' className="active" smooth={true} duration={1000}>About</Link>
               </li>
               {/* <li>
                 <Link to='about' className="active" smooth={true} duration={1000}>Portfolio</Link>
