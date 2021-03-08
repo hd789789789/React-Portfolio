@@ -197,7 +197,7 @@ body {
 
 .banner_img {
   padding: 0 30px;
-  margin-top: 150px;
+  margin-top: 210px;
 }
 
 /* Services */
@@ -407,6 +407,15 @@ body {
   color: #fff;
 }
 
+.skill_img {
+  padding-top: 35px;
+}
+
+.skill_img img {
+  width: 88%;
+  height: 60vh;
+}
+
 p.skills_info {
   display: inline-flex;
   margin-left: 20px;
@@ -424,6 +433,9 @@ p.skills_info {
   /* display: flex; */
 }
 
+.col-6_skill-content {
+  padding: 22px 0 0 22px;
+}
 
 .progress {
 	background-color: #d8d8d8;
@@ -538,9 +550,25 @@ p.skills_info {
   .toggle {
     display: flex;
   }
-  .banner_img img {
+
+  .col-6_img {
     display: none;
   }
+
+  .header_section{
+    display: inline-grid;
+    text-align: center;
+    width: 100%;
+  }
+
+  .col-6_header {
+    width: 100%;
+  }
+
+  .header_ul {
+    margin: 0 auto 20px;
+  }
+
   .header_section h1 {
     font-size: 35px;
     font-weight: 700;
@@ -552,6 +580,15 @@ p.skills_info {
     line-height: 30px;
     margin-bottom: 50px;
   }
+
+  .col-6_about-img {
+    display: none;
+  }
+
+  .col-6_skill-img {
+    display: none;
+  }
+
   .common {
     width: 100%;
   }

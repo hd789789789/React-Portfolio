@@ -1,5 +1,5 @@
 import React from 'react';
-import {FaGithub, FaCamera} from "react-icons/fa";
+import {FaGithub, FaCamera, FaReact} from "react-icons/fa";
 
 const Services = () => {
     const [header] = React.useState({mainHeader:"SERVICES", text:'Duis et veniam qui sit ullamco laboris'+
@@ -25,7 +25,7 @@ const Services = () => {
     },
     {
       id:3,
-      icon: <FaGithub className="commonIcons" />,
+      icon: <FaReact className="commonIcons" />,
       heading: 'Web Development',
       text: 'Id consectetur adipisicing veniam adipisicing'+
       'veniam consequat occaecat. Quis veniam sit cupidatat'+
@@ -52,7 +52,7 @@ const Services = () => {
     },
     {
       id:6,
-      icon: <FaGithub className="commonIcons" />,
+      icon: <FaReact className="commonIcons" />,
       heading: 'Web Development',
       text: 'Id consectetur adipisicing veniam adipisicing'+
       'veniam consequat occaecat. Quis veniam sit cupidatat'+
@@ -60,6 +60,15 @@ const Services = () => {
       'Dolor aliqua officia sint ea cupidatat magna.'
     }
     ]);
+    const listItems = state.map(info => (
+            <div className="col-4" key={info.id}>
+              <div className="service_box">
+                {info.icon}
+                <div className="service_box-header">{info.heading}</div>
+                <div className="service_box-content">{info.text}</div>
+              </div>
+            </div>
+            ));
   return (
     <div className="services">
       <div className="container">
@@ -71,15 +80,7 @@ const Services = () => {
             <div className="commonBorder"></div>
           </div>
           <div className="row bgMain">
-            {state.map(info => (
-            <div className="col-4">
-              <div className="service_box">
-                {info.icon}
-                <div className="service_box-header">{info.heading}</div>
-                <div className="service_box-content">{info.text}</div>
-              </div>
-            </div>
-            ))}
+            {listItems}
           </div>
         </div>
       </div>

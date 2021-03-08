@@ -1,5 +1,5 @@
 import React from 'react';
-import Man from '../assets/man-01.png';
+import About_img from '../assets/features-3.png';
 
 const About = () => {
   const [header] = React.useState({
@@ -13,6 +13,12 @@ const About = () => {
     { id: 3, title: "Phone:", text: "032 6161 901" },
     { id: 4, title: "Username:", text: "Haiduyhd789" },
   ]);
+  const listItems = state.map((info) => (
+                    <div className="col-6" key={info.id}>
+                      <strong>{info.title}</strong>
+                      <p>{info.text}</p>
+                    </div>
+                  ));
   return (
     <div className="about">
       <div className="container">
@@ -22,9 +28,9 @@ const About = () => {
           <div className="commonBorder"></div>
         </div>
         <div className="row  h-650 alignCenter">
-          <div className="col-6">
+          <div className="col-6 col-6_about-img">
             <div className="about_img">
-              {/* <img src={Man} alt="man" /> */}
+              <img src={About_img} alt="About_img" />
             </div>
           </div>
           <div className="col-6">
@@ -41,12 +47,7 @@ const About = () => {
               </div>
               <div className="info_contacts">
                 <div className="row">
-                  {state.map((info) => (
-                    <div className="col-6">
-                      <strong>{info.title}</strong>
-                      <p>{info.text}</p>
-                    </div>
-                  ))}
+                  {listItems}
                 </div>
               </div>
             </div>
